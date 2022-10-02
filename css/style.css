@@ -33752,4 +33752,8 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 30px;
+    margin-top: 30px;
+}
+.our-service {
+    width: 100%;
 }
