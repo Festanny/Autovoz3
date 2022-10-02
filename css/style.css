@@ -30459,10 +30459,10 @@ td#today {
 
 .tt-promo02 {
     background-color: #ffffff;
-    padding: 21px 15px 0 29px;
+    padding: 21px 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     position: relative;
-    min-height: 208px;
+    /* min-height: 208px; */
 }
 
 .tt-promo02>* {
@@ -33746,7 +33746,7 @@ html {
 .aboutFaq .info-block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 30px;
 }
 .our-service-block {
     display: grid;

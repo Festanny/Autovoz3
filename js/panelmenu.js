@@ -102,42 +102,42 @@ $.fn.mm_handler = function(mmpanel){
 	};
 }
 
-$.fn.parse_mm = function(mmpanel) {
-	var $mm_curent = $(this).clone(),
-		$mm_new = $(get_mm_parent()),
-		$mm_block = false,
-		count = 0,
-		_this = false,
-		$btnBack = false,
-		$ul;
-	$(this).empty();
+// $.fn.parse_mm = function(mmpanel) {
+// 	var $mm_curent = $(this).clone(),
+// 		$mm_new = $(get_mm_parent()),
+// 		$mm_block = false,
+// 		count = 0,
+// 		_this = false,
+// 		$btnBack = false,
+// 		$ul;
+// 	$(this).empty();
 
-	$mm_curent.find('a').each(function(){
-		_this = $(this);
-		$ul = _this.parent().find("ul").first();
-		if($ul.length) {
-			count++;
-			$ul.prepend("<li></li>").find("li").first().append(_this.clone().addClass("mm-original-link"));
-			_this.attr("href", "#mm"+count).attr("data-target", "#mm"+count).addClass("mm-next-level");
-		}
-	});
-	$mm_curent.find('ul').each(function(index){
-		$btnBack = false;
-		$mm_block = $(get_mm_block()).attr("id", "mm"+index).append($(this));
-		if (index == 0) {
-			$mm_block.addClass("mmopened").addClass("mmcurrent").removeClass("mmhidden");
-			$btnBack = getButtonClose($mm_curent.find(".mm-closebtn").html(), mmpanel.mm_close_button);
-			$mm_block.find("ul").first().prepend($btnBack);
-		}
-		else {
-			$btnBack = getButtonBack($mm_curent.find(".mm-backbtn").html(), mmpanel.mm_back_button);
-			$mm_block.find("ul").first().prepend($btnBack);
-		}
-		$mm_new.append($mm_block);
-	});
+// 	$mm_curent.find('a').each(function(){
+// 		_this = $(this);
+// 		$ul = _this.parent().find("ul").first();
+// 		if($ul.length) {
+// 			count++;
+// 			$ul.prepend("<li></li>").find("li").first().append(_this.clone().addClass("mm-original-link"));
+// 			_this.attr("href", "#mm"+count).attr("data-target", "#mm"+count).addClass("mm-next-level");
+// 		}
+// 	});
+// 	$mm_curent.find('ul').each(function(index){
+// 		$btnBack = false;
+// 		$mm_block = $(get_mm_block()).attr("id", "mm"+index).append($(this));
+// 		if (index == 0) {
+// 			$mm_block.addClass("mmopened").addClass("mmcurrent").removeClass("mmhidden");
+// 			$btnBack = getButtonClose($mm_curent.find(".mm-closebtn").html(), mmpanel.mm_close_button);
+// 			$mm_block.find("ul").first().prepend($btnBack);
+// 		}
+// 		else {
+// 			$btnBack = getButtonBack($mm_curent.find(".mm-backbtn").html(), mmpanel.mm_back_button);
+// 			$mm_block.find("ul").first().prepend($btnBack);
+// 		}
+// 		$mm_new.append($mm_block);
+// 	});
 
-	$(this).append($mm_new);
-}
+// 	$(this).append($mm_new);
+// }
 $.fn.init_mm = function(mmpanel) {
 	var _parent = $(this);
 	_parent.find("a").each(function(){

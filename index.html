@@ -19,11 +19,11 @@
 	<link rel='stylesheet' id='caleader-style-css' href='css/style.css' type='text/css' media='all' />
 
 	<script type='text/javascript' src='https://code.jquery.com/jquery-3.6.1.min.js' id='jquery-core-js'></script>
-
+	<script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
 </head>
 
 <body
-	class="home page-template-default page page-id-1586 theme-caleader woocommerce-no-js caleader-base elementor-default elementor-kit-5 elementor-page elementor-page-1586">
+	class="home page-template-default page page-id-1586 theme-caleader caleader-base elementor-default elementor-kit-5 elementor-page elementor-page-1586">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
 		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
 		<defs>
@@ -145,12 +145,29 @@
 			</filter>
 		</defs>
 	</svg>
-	<nav class="panel-menu" id="mobile-menu">
-		<div class="mm-navbtn-names">
-			<div class="mm-closebtn">Close</div>
-			<div class="mm-backbtn">Back</div>
+	
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+		  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
+		  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
 		</div>
-	</nav>
+		<div class="offcanvas-body">
+		  <div>
+			Какой-то текст в качестве заполнителя. В реальной жизни у вас могут быть элементы, которые Вы выбрали. Нравится, текст, изображения, списки и т. д.
+		  </div>
+		  <div class="dropdown mt-3">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+			  Кнопка раскрывающегося списка
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  <li><a class="dropdown-item" href="#">Действие</a></li>
+			  <li><a class="dropdown-item" href="#">Другое действие</a></li>
+			  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+
 	<header id="tt-header" class="  tt-header-01">
 		<!-- quickLinks -->
 		<div class="tt-quickLinks-popup">
@@ -521,8 +538,8 @@
 								item</span>
 						</a>
 					</div>
-					<div class="col-menu-toggle col-auto">
-						<a href="javascript:void(0)" class="tt-menu-toggle icon-menu"></a>
+					<div class="col-menu-toggle col-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+						<i class="fa-solid fa-bars"></i>
 					</div>
 				</div>
 			</div>
@@ -987,52 +1004,43 @@
 										</div>
 									</div>
 									<div class="elementor-element elementor-element-63349e67 elementor-widget elementor-widget-MakeItEasy"
-										data-id="63349e67" data-element_type="widget"
-										data-widget_type="MakeItEasy.default">
+										>
 										<div class="elementor-widget-container">
 											<div class="tt-listing-col">
 												<div class="our-service-block">
 
-													<div class="block">
-														<div class="tt-promo02">
-															<div class="tt-bg-text">1</div>
-															<div class="tt-icon icon-inventory"></div>
-															<a href="google.com" class="tt-item">
-																<h6 class="tt-title">View Our Inventory</h6>
-															</a>
-															<p>Our car database has over 9,500 new an used vehicles</p>
+													<a href="#" class="block tt-promo02">
+														<div class="tt-bg-text">1</div>
+														<div class="tt-icon icon-inventory"></div>
+														<div class="tt-item">
+															<h6 class="tt-title">Пример заголовка</h6>
 														</div>
-													</div>
-													<div class="block">
-														<div class="tt-promo02">
-															<div class="tt-bg-text">2</div>
-															<div class="tt-icon icon-financing1"></div>
-															<a href="" class="tt-item">
-																<h6 class="tt-title">Get Easy Financing</h6>
-															</a>
-															<p>We offer a variety of loan programs for our clients</p>
+														<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio sapiente doloribus? Nam dolorem amet accusantium</p>
+													</a>
+													<a href="#" class="block tt-promo02">
+														<div class="tt-bg-text">2</div>
+														<div class="tt-icon icon-inventory"></div>
+														<div class="tt-item">
+															<h6 class="tt-title">Пример заголовка</h6>
 														</div>
-													</div>
-													<div class="block">
-														<div class="tt-promo02">
-															<div class="tt-bg-text">3</div>
-															<div class="tt-icon icon-tradein1"></div>
-															<a href="" class="tt-item">
-																<h6 class="tt-title">Value Your Trade-In</h6>
-															</a>
-															<p>There are many advantages to trading in your car here</p>
+														<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio sapiente doloribus? Nam dolorem amet accusantium</p>
+													</a>
+													<a href="#" class="block tt-promo02">
+														<div class="tt-bg-text">3</div>
+														<div class="tt-icon icon-inventory"></div>
+														<div class="tt-item">
+															<h6 class="tt-title">Пример заголовка</h6>
 														</div>
-													</div>
-													<div class="block">
-														<div class="tt-promo02">
-															<div class="tt-bg-text">4</div>
-															<div class="tt-icon icon-payment1"></div>
-															<a href="" class="tt-item">
-																<h6 class="tt-title">Make A Payment</h6>
-															</a>
-															<p>You make a payment and leave us on your own car</p>
+														<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio sapiente doloribus? Nam dolorem amet accusantium</p>
+													</a>
+													<a href="#" class="block tt-promo02">
+														<div class="tt-bg-text">4</div>
+														<div class="tt-icon icon-inventory"></div>
+														<div class="tt-item">
+															<h6 class="tt-title">Пример заголовка</h6>
 														</div>
-													</div>
+														<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio sapiente doloribus? Nam dolorem amet accusantium</p>
+													</a>
 
 												</div>
 											</div>
@@ -1974,7 +1982,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script type='text/javascript' src='js/slick.min.js' id='car-leader-elemt-slick-js'></script>
-	<script type='text/javascript' src='js/panelmenu.js' id='panelmenu-js'></script>
+	<!-- <script type='text/javascript' src='js/panelmenu.js' id='panelmenu-js'></script> -->
 	<script type='text/javascript' src='js/imagesloaded.min.js' id='imagesloaded-js'></script>
 	<script type='text/javascript' src='js/isotope.pkgd.min.js' id='isotope-pkgd-js'></script>
 	<script type='text/javascript' src='js/jquery.sumoselect.min.js' id='query-sumoselect-js'></script>

@@ -1650,16 +1650,16 @@
     };
 
     // mobile menu
-    if ($ttDesctopMenu && blocks.mobileMenuToggle) {
-        var ttDesktopMenu = $ttDesctopMenu.find('ul').first().children().clone();
+    // if ($ttDesctopMenu && blocks.mobileMenuToggle) {
+    //     var ttDesktopMenu = $ttDesctopMenu.find('ul').first().children().clone();
 
-        $ttMobilepMenu.find('ul').append(ttDesktopMenu);
-        blocks.mobileMenuToggle.initMM({
-            enable_breakpoint: true,
-            mobile_button: true,
-            breakpoint: 1025
-        });
-    };
+    //     $ttMobilepMenu.find('ul').append(ttDesktopMenu);
+    //     blocks.mobileMenuToggle.initMM({
+    //         enable_breakpoint: true,
+    //         mobile_button: true,
+    //         breakpoint: 1025
+    //     });
+    // };
 
     // background image inline
     dataBg('[data-bg]');
