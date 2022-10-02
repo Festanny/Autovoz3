@@ -13,6 +13,7 @@
 	<meta name='robots' content='max-image-preview:large' />
 	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel='stylesheet' id='elementor-frontend-css' href='css/frontend-lite.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='elementor-post-1586-css' href='css/post-1586.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='caleader-style-css' href='css/style.css' type='text/css' media='all' />
@@ -590,222 +591,90 @@
 						</div>
 					</section>
 					<section
-						class="elementor-section elementor-top-section elementor-element elementor-element-2b09a4bd elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+						class="elementor-section elementor-top-section elementor-element elementor-element-2b09a4bd elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default darkBg formOrder"
 						data-id="2b09a4bd" data-element_type="section"
 						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f40f819"
-								data-id="4f40f819" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-4b69da2 elementor-widget elementor-widget-text-editor"
-										data-id="4b69da2" data-element_type="widget"
-										data-widget_type="text-editor.default">
-										<div class="elementor-widget-container">
-											<style>
-												/*! elementor - v3.6.6 - 08-06-2022 */
-												.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-													background-color: #818a91;
-													color: #fff
-												}
+						<form class="">
+							<div id="js-searchfilter">
+								<div class="tt-search-filter-wrapper">
+									<div class="container">
+										
+										<div class="tt-block-title text-left tt-block-title-border">
+											<h1 class="tt-title">Рассчитать стоимость</h1>
+										</div>
 
-												.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-													color: #818a91;
-													border: 3px solid;
-													background-color: transparent
-												}
-
-												.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-													margin-top: 8px
-												}
-
-												.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-													width: 1em;
-													height: 1em
-												}
-
-												.elementor-widget-text-editor .elementor-drop-cap {
-													float: left;
-													text-align: center;
-													line-height: 1;
-													font-size: 50px
-												}
-
-												.elementor-widget-text-editor .elementor-drop-cap-letter {
-													display: inline-block
-												}
-											</style>
-											<div>
-												<form id="tt-filters-aside" class="caleader-listings-search s-1 home"
-													autocomplete="off"
-													action="https://smartdata.tonytemplates.com/caleader-v2/listings"
-													method="GET" role="search">
-
-
-													<div id="js-searchfilter">
-														<div class="tt-search-filter-wrapper">
-															<div class="container tt-container-fluid-mobile">
-																<div class="tt-search-filter">
-																	<i class="tt-icon-filter icon-carsearch"></i>
-																	<div class="tt-col-title">
-																		<div class="tt-show">
-																			Car Search<br>
-																			<span>Find your next car</span>
-																		</div>
-																		<div class="tt-close">Close</div>
-																	</div>
-																	<div
-																		class="tt-col-select visible-desctope tt-skinSelect-01">
-
-																		<select data-label_sumo="Condition"
-																			class="tt-select tt-skin-01 id_select_condition  select_ajax"
-																			name="condition">
-																			<option value="" disabled="disabled"
-																				selected="selected">Condition</option>
-																			<option value="NEW">
-																				NEW </option>
-																			<option value="CERTIFIED">
-																				CERTIFIED </option>
-																			<option value="USED">
-																				USED </option>
-																			<option value="sold_out">
-																				Sold Out </option>
-
-
-																		</select>
-																		<select data-label_sumo="Year"
-																			class="tt-select tt-skin-01 id_select_the_year  select_ajax"
-																			name="the_year" disabled="disabled">
-																			<option value="" disabled="disabled"
-																				selected="selected">Year</option>
-
-
-																		</select>
-																		<select data-label_sumo="Make"
-																			class="tt-select tt-skin-01 id_select_make  select_ajax"
-																			name="make" disabled="disabled">
-																			<option value="" disabled="disabled"
-																				selected="selected">Select a Make
-																			</option>
-
-
-																		</select>
-																		<select data-label_sumo="Model"
-																			class="tt-select tt-skin-01 id_select_model  select_ajax"
-																			name="model" disabled="disabled">
-																			<option value="" disabled="disabled"
-																				selected="selected">Select a Model
-																			</option>
-
-
-																		</select>
-																		<select data-label_sumo="Price"
-																			class="tt-select tt-skin-01 id_select_price  select_ajax"
-																			name="price" disabled="disabled">
-																			<option value="" disabled="disabled"
-																				selected="selected">Price</option>
-
-
-																		</select>
-																	</div>
-																	<div
-																		class="tt-col-select visible-device tt-skinSelect-01">
-																		<div class="tt-custom-mobile">
-																			<div class="tt-col-6 col-mobile-ajax">
-																				<select data-label_sumo="Condition"
-																					class="tt-select tt-skin-01 id_select_condition  select_ajax_mobile"
-																					name="condition">
-																					<option value="" disabled="disabled"
-																						selected="selected">Condition
-																					</option>
-																					<option value="NEW">
-																						NEW </option>
-																					<option value="CERTIFIED">
-																						CERTIFIED </option>
-																					<option value="USED">
-																						USED </option>
-																					<option value="sold_out">
-																						Sold Out </option>
-
-
-																				</select>
-																			</div>
-																			<div class="tt-col-6 col-mobile-ajax">
-																				<select data-label_sumo="Year"
-																					class="tt-select tt-skin-01 id_select_the_year  select_ajax_mobile"
-																					name="the_year" disabled="disabled">
-																					<option value="" disabled="disabled"
-																						selected="selected">Year
-																					</option>
-
-
-																				</select>
-																			</div>
-																			<div class="tt-col-6 col-mobile-ajax">
-																				<select data-label_sumo="Make"
-																					class="tt-select tt-skin-01 id_select_make  select_ajax_mobile"
-																					name="make" disabled="disabled">
-																					<option value="" disabled="disabled"
-																						selected="selected">Select a
-																						Make</option>
-
-
-																				</select>
-																			</div>
-																			<div class="tt-col-6 col-mobile-ajax">
-																				<select data-label_sumo="Model"
-																					class="tt-select tt-skin-01 id_select_model  select_ajax_mobile"
-																					name="model" disabled="disabled">
-																					<option value="" disabled="disabled"
-																						selected="selected">Select a
-																						Model</option>
-
-
-																				</select>
-																			</div>
-																			<div class="tt-col-12 col-mobile-ajax">
-																				<select data-label_sumo="Price"
-																					class="tt-select tt-skin-01 id_select_price  select_ajax_mobile"
-																					name="price" disabled="disabled">
-																					<option value="" disabled="disabled"
-																						selected="selected">Price
-																					</option>
-
-
-																				</select>
-																			</div>
-
-																			<input type="hidden" name="s">
-																			<div class="tt-col-12">
-																				<div class="tt-btn">
-																					<button class="btn tt-icon-left"
-																						type="submit"><i
-																							class="icon-musica-searcher"></i><span
-																							id="home_post_count_mob">
-																							15&nbsp; </span>cars
-																					</button>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="tt-col-btn">
-																		<button class="btn tt-icon-left"
-																			type="submit"><i
-																				class="icon-musica-searcher"></i>
-																			<span class="tt-mobile-hide"
-																				id="home_post_count">
-																				15&nbsp; </span>cars</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-
-
-
-												</form>
+										<div class="tabs-formOrder">
+											<div class="tab-2">
+											  <label for="tab2-1">One</label>
+											  <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+											  <div>
+												<h4>Tab One</h4>
+												  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas. <a class="documentation" href="https://flkt.mx/pitaya/componentes.html#pestanias">Documentación en español</a>.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
+											  </div>
+											</div>
+											<div class="tab-2">
+											  <label for="tab2-2">Two</label>
+											  <input id="tab2-2" name="tabs-two" type="radio">
+											  <div>
+												<h4>Tab Two</h4>
+												<p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
+											  </div>
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+						</form>
+					</section>
+					<section class="aboutFaq paddingStandard">
+						<div class="info-block">
+							<div class="block">
+								<div class="tt-block-title text-left tt-block-title-border">
+									<h1 class="tt-title">О компании</h1>
+								</div>
+								<div class="text-block">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sed libero blanditiis recusandae consequuntur, dolores, eum sequi dolor quae, eveniet veniam nesciunt explicabo? Id reiciendis accusantium deleniti impedit vitae recusandae?</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sed libero blanditiis recusandae consequuntur, dolores, eum sequi dolor quae, eveniet veniam nesciunt explicabo? Id reiciendis accusantium deleniti impedit vitae recusandae?</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sed libero blanditiis recusandae consequuntur, dolores, eum sequi dolor quae, eveniet veniam nesciunt explicabo? Id reiciendis accusantium deleniti impedit vitae recusandae?</p>
+								</div>
+							</div>
+							<div class="block">
+								<div class="tt-block-title text-left tt-block-title-border">
+									<h1 class="tt-title">FAQ</h1>
+								</div>
+								<div class="faqBlock">
+									<div class="accordion accordion-flush" id="accordionFlushExample">
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+											  Элемент аккордеона #1
+											</button>
+										  </h2>
+										  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+										  </div>
+										</div>
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="flush-headingTwo">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+											  Элемент аккордеона #2
+											</button>
+										  </h2>
+										  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+										  </div>
+										</div>
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="flush-headingThree">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+											  Элемент аккордеона #3
+											</button>
+										  </h2>
+										  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+										  </div>
+										</div>
+									  </div>
 								</div>
 							</div>
 						</div>
@@ -2154,11 +2023,12 @@
 			</div>
 		</div>
 	</div>
-	<form id="tt-filters-aside-home" class="caleader-listings-search" autocomplete="off"
+	<!-- <form id="tt-filters-aside-home" class="caleader-listings-search" autocomplete="off"
 		action="https://smartdata.tonytemplates.com/caleader-v2/listings" method="GET" role="search">
 		<div id="tt-detach-search-madal"></div>
-	</form>
+	</form> -->
 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script type='text/javascript' src='js/slick.min.js' id='car-leader-elemt-slick-js'></script>
 	<script type='text/javascript' src='js/panelmenu.js' id='panelmenu-js'></script>
 	<script type='text/javascript' src='js/imagesloaded.min.js' id='imagesloaded-js'></script>

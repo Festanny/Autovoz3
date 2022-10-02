@@ -3,6 +3,7 @@
     --black: #222;
     --red: #dd3d53;
     --bg-gray: #f7f7f7;
+    --bgDark: #333333;
 }
 
 *,
@@ -33617,6 +33618,10 @@ html {
     background-color: #efedef;
 }
 
+.darkBg {
+    background-color: var(--bgDark)
+}
+
 .tabs-formOrder .made-with {
     /* background: #fd264f; */
     color: #fff;
@@ -33734,8 +33739,8 @@ html {
     margin-left: -100%;
 }
 
-.marginStandard {
-    margin: 127px 0;
+.paddingStandard {
+    padding: 124px 0;
 }
 
 .aboutFaq .info-block {
