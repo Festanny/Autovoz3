@@ -33950,3 +33950,47 @@ html {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
+.tabs-formOrder .tt-form-default input[type=text],
+.tabs-formOrder .tt-form-default input[type=email],
+.tabs-formOrder .tt-form-default input[type=number],
+.tabs-formOrder .tt-form-default input[type=search],
+.tabs-formOrder .tt-form-default textarea,
+.tabs-formOrder .woocommerce-Input {
+    background-color: var(--dark2);
+    color: var(--white)!important;
+}
+.tabs-formOrder .block.smallSpan .tt-form-default .tt-form-aside span {
+    font-size: 12px;
+}
+.tabs-formOrder .block .tt-form-default .form-group {
+    margin-bottom: 0;
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .info-block-main {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--bg-gray);
+    margin-bottom: 15px;
+}
+/* .tabs-formOrder .block.formBlockMainOrder #contactform .manager {
+    color: var(--red);
+} */
+.tabs-formOrder .block.formBlockMainOrder #contactform .form-check-input {
+    position: inherit;
+    margin: 0;
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data {
+    display: flex;
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data label {
+    margin-left: 10px;
+    color: var(--white);
+}
+.tabs-formOrder .block .tt-form-default input.error {
+    border-color: var(--red);
+    -webkit-box-shadow: 0px 0px 1px var(--red);
+    -moz-box-shadow: 0px 0px 1px var(--red);
+    box-shadow: 0px 0px 1px var(--red);
+}
+.d-none {
+    display: none;
+}

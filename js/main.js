@@ -2,9 +2,78 @@
     "use strict";
 
     $('.tabs-formOrder input.btnFormOrder').on('click', function(){
-        var id = $(this).attr('data-next-order');
-        console.log(id)
-    })
+        var id = $(this).attr('data-next-order'),
+            content
+        if (id == 4) {
+            // Получение данных
+            var car = $('.tabs-formOrder .block input[name="car"]:checked').val(),
+                brand = $('.tabs-formOrder .block input[name="brand"]').val(),
+                model = $('.tabs-formOrder .block input[name="model"]').val(),
+                fromCity = $('.tabs-formOrder .block input[name="from"]').val(),
+                toCity = $('.tabs-formOrder .block input[name="to"]').val(),
+                date = $('.tabs-formOrder .block input[name="date"]').val();
+            if (car!== undefined&&fromCity!=''&&toCity&&date!='') {
+                $('.tabs-formOrder .block.formBlockMainOrder .info-block.d-none').removeClass('d-none')
+                $('.tabs-formOrder .block.formBlockMainOrder .info-block-main .info span').html(`${car} ${brand} ${model} из г.${fromCity} в г.${toCity}. Желаемая дата отправки: ${date}`);
+            } else {
+                $('.tabs-formOrder .block.formBlockMainOrder .info-block').addClass('d-none')
+            }
+        }
+        if (id == 5) {
+            var nameForm = $('.tabs-formOrder .block .tt-form-default input[name="name"]'),
+                phoneForm = $('.tabs-formOrder .block .tt-form-default input[name="phone"]'),
+                checkPeople = $('.tabs-formOrder .block .tt-form-default .checkbox-data input[type="checkbox"]').is(':checked');
+            nameForm.val() == '' ? addError(nameForm) : removeError(nameForm)
+            phoneForm.val() == '' || phoneForm.val().length != 17 ? addError(phoneForm) : removeError(phoneForm)
+            if (checkPeople === false) alert('Нет согласия на обработку персональных данных')
+            if (nameForm.val()!='' && phoneForm.val()!='' && phoneForm.val().length==17 && checkPeople===true) alert('Отправлено')
+        } else {
+            content = $('.tabs-formOrder .block[data-next-order="' + id + '"]')
+            $('.tabs-formOrder .block.active').removeClass('active');
+            content.addClass('active');
+        }
+        function addError(el) {
+            el.addClass('error')
+        }
+        function removeError(el) {
+            el.removeClass('error')
+        }
+    });
+
+    // маска для телефона
+    window.addEventListener("DOMContentLoaded", function() {
+    [].forEach.call( document.querySelectorAll('#phone'), function(input) {
+    var keyCode;
+    function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        var matrix = "+7 (___) ___ ____",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, true);
+    input.addEventListener("keydown", mask, false)
+    });
+    });
 
 
     var $document = $(document),

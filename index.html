@@ -17,6 +17,7 @@
     <link rel='stylesheet' id='elementor-frontend-css' href='css/frontend-lite.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-1586-css' href='css/post-1586.css' type='text/css' media='all' />
     <link rel='stylesheet' id='caleader-style-css' href='css/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
 
     <script type='text/javascript' src='https://code.jquery.com/jquery-3.6.1.min.js' id='jquery-core-js'></script>
     <script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
@@ -174,10 +175,10 @@
                                         </div>
 
                                         <div class="tabs-formOrder">
-                                            <div class="block active">
-                                                <div class="titleFormOrder">Выберите тип транспорта</div>
+                                            <div class="block active" data-next-order="1">
+                                                <div class="titleFormOrder">Выберите тип транспорта (1/4)</div>
                                                 <div class="formOrderDifferent">
-                                                    <div class="block typeCarBlock" data-next-order="1">
+                                                    <div class="typeCarBlock">
                                                         <div>
                                                             <input type="radio" id="car1" name="car" value="Седан" required="">
                                                             <label for="car1">
@@ -235,8 +236,84 @@
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="block">1231231</div>
                                                     <input type="button" data-next-order="2" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                </div>
+                                            </div>
+                                            <div class="block smallSpan" data-next-order="2">
+                                                <div class="titleFormOrder">Марка и модель автомобиля (2/4)</div>
+                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                    <div class="tt-form-aside">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="brand" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Марка авто"></span></div>
+                                                                <span>Например, Nissan</span>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="model" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Модель авто"></span></div>
+                                                                <span>Например, Murano</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="button" data-next-order="1" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                <input type="button" data-next-order="3" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                            </div>
+                                            <div class="block smallSpan" data-next-order="3">
+                                                <div class="titleFormOrder">Информация о перевозке (3/4)</div>
+                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                    <div class="tt-form-aside">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="from" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Откуда"></span></div>
+                                                                <span>Например, Москва</span>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="to" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Куда"></span></div>
+                                                                <span>Например, Владивосток</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mt-3"><span class="wpcf7-form-control-wrap your-name"><input type="text" id="datepicker" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Желаемая дата отправки"></span></div>
+                                                    </div>
+                                                </div>
+                                                <input type="button" data-next-order="2" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                <input type="button" data-next-order="4" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                            </div>
+                                            <div class="block formBlockMainOrder" data-next-order="4">
+                                                <div class="titleFormOrder">Стоимость перевозки (4/4)</div>
+                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                    <div class="tt-form-aside">
+                                                        <p class="manager">Наши менеджеры рассчитывают стоимость перевозки автомобиля по Вашей заявке!</p>
+                                                        <div class="info-block">
+                                                            <div class="info-block-main mb-3">
+                                                                <span><b>Вы хотите перевезти:</b></span>
+                                                                <div class="info">
+                                                                    <span>Информация</span>
+                                                                </div>
+                                                            </div>
+                                                            <span class="price-text"><b>Узнайте стоимость прямо сейчас!</b></span>
+                                                        </div>
+                                                        <div class="form-group-auto">                                                              
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Имя"></span></div>                                                                        
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" id="phone" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Номер телефона"></span></div>                                                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mt-3">
+                                                            <div class="checkbox-data">
+                                                                <input type="checkbox" class="form-check-input" id="agree-on-pdata-processing-check" required="" checked="">
+                                                                <label class="form-check-label" for="agree-on-pdata-processing-check">Согласен на обработку персональных данных</label>
+                                                            </div>
+                                                            <div class="btn_form_order mb-3 mt-3">
+                                                                <input type="button" data-next-order="3" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                <input type="button" data-next-order="5" value="Узнать стоимость" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                            </div>
+                                                            <p class="desc">* В течение 5 минут с Вами свяжется наш специалист и проинформирует вас о стоимости перевозки, а также ответит на все интересующие Вас вопросы.</p>
+                                                        </div>                                                    
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1120,14 +1197,9 @@
             </div>
         </div>
     </div>
-    <!-- <form id="tt-filters-aside-home" class="caleader-listings-search" autocomplete="off"
-        action="https://smartdata.tonytemplates.com/caleader-v2/listings" method="GET" role="search">
-        <div id="tt-detach-search-madal"></div>
-    </form> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/slick.min.js' id='car-leader-elemt-slick-js'></script>
-    <!-- <script type='text/javascript' src='js/panelmenu.js' id='panelmenu-js'></script> -->
     <script type='text/javascript' src='js/imagesloaded.min.js' id='imagesloaded-js'></script>
     <script type='text/javascript' src='js/isotope.pkgd.min.js' id='isotope-pkgd-js'></script>
     <script type='text/javascript' src='js/jquery.sumoselect.min.js' id='query-sumoselect-js'></script>
@@ -1142,19 +1214,8 @@
         var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.6.6", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "e_import_export": true, "additional_custom_breakpoints": true, "e_hidden_wordpress_widgets": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true }, "urls": { "assets": "https:\/\/smartdata.tonytemplates.com\/caleader-v2\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 1586, "title": "Caleader%20%E2%80%93%20WP%20Calader%20Demo", "excerpt": "", "featuredImage": false } };
     </script>
     <script type='text/javascript' src='js/frontend.min.js' id='elementor-frontend-js'></script>
-    <div class="modal fade show" id="modalVideoProduct" tabindex="-1" role="dialog" aria-label="myModalLabel">
-        <div class="modal-dialog modal-video">
-            <div class="modal-content ">
-                <div class="modal-body modal-layout-dafault">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
-                            class="icon-close"></span></button>
-                    <div class="modal-video-content">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/jquery-ui.js"></script>
 </body>
 
 </html>
