@@ -1079,15 +1079,15 @@
         ttMenuObjLevel_0.on("mouseenter mouseleave", function(event) {
             $(this).toggleClass("is-hover");
         });
-        //is active
-        var location = window.location.href,
-            cur_url = location.split('/').pop();
-        ttDesctopMenu.find('li').each(function() {
-            var link = $(this).find('a').attr('href');
-            if (cur_url == link) {
-                $(this).addClass('is-active').closest('.is-subMenu').addClass('is-active');
-            }
-        });
+        // //is active
+        // var location = window.location.href,
+        //     cur_url = location.split('/').pop();
+        // ttDesctopMenu.find('li').each(function() {
+        //     var link = $(this).find('a').attr('href');
+        //     if (cur_url == link) {
+        //         $(this).addClass('is-active').closest('.is-subMenu').addClass('is-active');
+        //     }
+        // });
     };
 
     function touchClickDesctope() {
