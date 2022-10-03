@@ -1264,12 +1264,12 @@
 
             slick.slick({
                 mobileFirst: false,
-                slidesToShow: itemQuantity || 1,
+                slidesToShow: itemQuantity || 2,
                 slidesToScroll: 1,
                 infinite: true,
                 arrows: false,
                 dots: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 5000,
                 speed: 500,
                 pauseOnHover: false,
@@ -1447,8 +1447,9 @@
             adaptiveHeight: true,
             autoplay: true,
             autoplaySpeed: 5000,
-            responsive: [{
-                    breakpoint: 1025,
+            responsive: [
+                {
+                    breakpoint: 1230,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
