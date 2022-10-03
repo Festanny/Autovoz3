@@ -1,6 +1,11 @@
 (function($) {
     "use strict";
 
+    $('.tabs-formOrder input.btnFormOrder').on('click', function(){
+        var id = $(this).attr('data-next-order');
+        console.log(id)
+    })
+
 
     var $document = $(document),
         $window = $(window),
