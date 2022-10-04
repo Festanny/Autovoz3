@@ -2728,9 +2728,9 @@ input[type="button"].btn-block {
     transform: translate(0, -25%);
 }
 
-.modal.show .modal-dialog {
+/* .modal.show .modal-dialog {
     transform: translate(0, 0);
-}
+} */
 
 .modal-dialog-centered {
     display: flex;
@@ -2738,7 +2738,7 @@ input[type="button"].btn-block {
     min-height: calc(100% - (10px * 2));
 }
 
-.modal-content {
+/* .modal-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2749,7 +2749,7 @@ input[type="button"].btn-block {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0;
     outline: 0;
-}
+} */
 
 .modal-backdrop {
     position: fixed;
@@ -2769,7 +2769,7 @@ input[type="button"].btn-block {
     opacity: 0.5;
 }
 
-.modal-header {
+/* .modal-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -2793,8 +2793,8 @@ input[type="button"].btn-block {
     position: relative;
     flex: 1 1 auto;
     padding: 15px;
-}
-
+} */
+/* 
 .modal-footer {
     display: flex;
     align-items: center;
@@ -2809,6 +2809,10 @@ input[type="button"].btn-block {
 
 .modal-footer> :not(:last-child) {
     margin-right: .25rem;
+} */
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
 }
 
 .modal-scrollbar-measure {
@@ -24694,14 +24698,14 @@ html.ie.gecko body.modal-open {
     outline: none;
 }
 
-.modal .modal-content {
+/* .modal .modal-content {
     border-radius: 0;
     border: none;
-}
+} */
 
-.modal .modal-footer {
+/* .modal .modal-footer {
     border: none;
-}
+} */
 
 /*
     modal custom
@@ -24734,10 +24738,10 @@ html.ie.gecko body.modal-open {
     background-color: #ffffff;
 }
 
-.modal .modal-body {
+/* .modal .modal-body {
     text-align: left;
     padding: 38px 38px 40px 41px;
-}
+} */
 
 .modal .modal-body .close {
     font-size: 12px;
@@ -33833,11 +33837,16 @@ html {
     color: var(--red);
     font-weight: bold;
 }
-.tabs-formOrder input.btnFormOrder {
+.tabs-formOrder input.btnFormOrder,
+.modal.callback input.btnFormOrder {
     border: 2px solid var(--red);
     margin-top: 15px;
 }
-.tabs-formOrder input.btnFormOrder:hover {
+.modal.callback input.btnFormOrder {
+    margin: 0;
+}
+.tabs-formOrder input.btnFormOrder:hover,
+.modal.callback input.btnFormOrder:hover {
     border: 2px solid var(--red);
 }
 .tabs-formOrder .typeCarBlock input[type="radio"] {

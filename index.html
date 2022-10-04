@@ -38,7 +38,6 @@
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Контакты</a></li>
-                <li><a href="#" class="is-active">ЗАКАЗАТЬ ЗВОНОК</a></li>
             </ul>
         </div>
     </div>
@@ -89,7 +88,7 @@
                                     <li
                                     class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page is-active">
                                     <a href="#"
-                                        class="menu-link main-menu-link">ЗАКАЗАТЬ ЗВОНОК</a></li>
+                                        class="menu-link main-menu-link"  data-bs-toggle="modal" data-bs-target="#modalPhone">ЗАКАЗАТЬ ЗВОНОК</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -1193,6 +1192,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Обратный звонок -->
+    <div class="modal fade callback" id="modalPhone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="h5 modal-title" id="exampleModalLabel">Заказать звонок</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="tabs-formOrder">
+                    <div class="tt-form-default">
+                        <input type="text" name="model" value="" id="phone" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Модель авто">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <input type="button" data-next-order="2" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+            </div>
+        </div>
         </div>
     </div>
 
