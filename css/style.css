@@ -33800,7 +33800,7 @@ html {
 .directionsPage .tt-block-title .tt-title {
     color: var(--color);
 }
-.directionsPage .tt-form-review .tt-form-aside .wpcf7-submit {
+.directionsPage .formDirectionsFromTo .tt-form-aside .wpcf7-submit {
     margin-top: 0;
     width: 100%;
 }
@@ -33823,6 +33823,134 @@ html {
 }
 .directionsPage table {
     color: var(--color);
+}
+
+#mobMenu .offcanvas-body ul > li a {
+    display: block;
+    padding: 10px 15px;
+}
+#mobMenu .offcanvas-body ul > li a.is-active {
+    color: var(--red);
+    font-weight: bold;
+}
+.tabs-formOrder input.btnFormOrder {
+    border: 2px solid var(--red);
+    margin-top: 15px;
+}
+.tabs-formOrder input.btnFormOrder:hover {
+    border: 2px solid var(--red);
+}
+.tabs-formOrder .typeCarBlock input[type="radio"] {
+    display: none;
+}
+.tabs-formOrder .typeCarBlock {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 10px;
+}
+.tabs-formOrder .typeCarBlock img {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+}
+.tabs-formOrder .typeCarBlock label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-gray);
+    cursor: pointer;
+}
+.tabs-formOrder.formOrderDark .typeCarBlock label {
+    background-color: var(--dark2);
+}
+.tabs-formOrder .typeCarBlock label::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: var(--red);
+    top: 0;
+    left: 0;
+    transition: all .3s;
+    opacity: 0;
+}
+.tabs-formOrder .typeCarBlock label:hover::before {
+    width: 5px;
+    opacity: 1;
+}
+.tabs-formOrder .typeCarBlock input:checked + label::before {
+    width: 5px;
+    opacity: 1;
+    background-color: green
+}
+.tabs-formOrder .typeCarBlock label span {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.tabs-formOrder .tt-form-default input[type=text],
+.tabs-formOrder .tt-form-default input[type=email],
+.tabs-formOrder .tt-form-default input[type=number],
+.tabs-formOrder .tt-form-default input[type=search],
+.tabs-formOrder .tt-form-default textarea,
+.tabs-formOrder .woocommerce-Input {
+    background-color: var(--bg-gray);
+    color: var(--black)!important;
+}
+.tabs-formOrder.formOrderDark .tt-form-default input[type=text],
+.tabs-formOrder.formOrderDark .tt-form-default input[type=email],
+.tabs-formOrder.formOrderDark .tt-form-default input[type=number],
+.tabs-formOrder.formOrderDark .tt-form-default input[type=search],
+.tabs-formOrder.formOrderDark .tt-form-default textarea,
+.tabs-formOrder.formOrderDark .woocommerce-Input {
+    background-color: var(--dark2);
+    color: var(--white)!important;
+}
+.tabs-formOrder .block.smallSpan .tt-form-default .tt-form-aside span {
+    font-size: 12px;
+}
+.tabs-formOrder .block .tt-form-default .form-group {
+    margin-bottom: 0;
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .info-block-main {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--bg-gray);
+    margin-bottom: 15px;
+}
+/* .tabs-formOrder .block.formBlockMainOrder #contactform .manager {
+    color: var(--red);
+} */
+.tabs-formOrder .block.formBlockMainOrder #contactform .form-check-input {
+    position: inherit;
+    margin: 0;
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data {
+    display: flex;
+}
+.tabs-formOrder.formOrderDark .block.formBlockMainOrder #contactform .checkbox-data label {
+    margin-left: 10px;
+    color: var(--white);
+}
+.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data label {
+    margin-left: 10px;
+    color: var(--color);
+}
+.tabs-formOrder .block .tt-form-default input.error {
+    border-color: var(--red);
+    -webkit-box-shadow: 0px 0px 1px var(--red);
+    -moz-box-shadow: 0px 0px 1px var(--red);
+    box-shadow: 0px 0px 1px var(--red);
+}
+.d-none {
+    display: none;
+}
+.col-menu-toggle i {
+	font-size: 20px;
+}
+.formOrderDark {
+    color: var(--white)!important;
 }
 @media screen and (max-width: 1130px) {
     .mainSlider .slide .slide-content .tp-caption-02-01 {
@@ -33875,6 +34003,12 @@ html {
     .mainSlider .slide .img--holder {
         height: 350px;
     }
+    .tabs-formOrder .typeCarBlock img {
+        width: 120px;
+    }
+    .tabs-formOrder .typeCarBlock label {
+        padding: 15px;
+    }
 }
 @media screen and (max-width: 400px) {
     .mainSlider .slide .slide-content .tp-caption-02-01 {
@@ -33888,109 +34022,4 @@ html {
     .mainSlider .slide .img--holder {
         height: 300px;
     }
-}
-#mobMenu .offcanvas-body ul > li a {
-    display: block;
-    padding: 10px 15px;
-}
-#mobMenu .offcanvas-body ul > li a.is-active {
-    color: var(--red);
-    font-weight: bold;
-}
-.tabs-formOrder input.btnFormOrder {
-    border: 2px solid var(--red);
-    margin-top: 15px;
-}
-.tabs-formOrder input.btnFormOrder:hover {
-    border: 2px solid var(--red);
-}
-.tabs-formOrder .typeCarBlock input[type="radio"] {
-    display: none;
-}
-.tabs-formOrder .typeCarBlock {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 10px;
-}
-.tabs-formOrder .typeCarBlock img {
-    width: 150px;
-    height: 60px;
-    object-fit: contain;
-}
-.tabs-formOrder .typeCarBlock label {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--dark2);
-    cursor: pointer
-}
-.tabs-formOrder .typeCarBlock label::before {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 100%;
-    background-color: var(--red);
-    top: 0;
-    left: 0;
-    transition: all .3s;
-    opacity: 0;
-}
-.tabs-formOrder .typeCarBlock label:hover::before {
-    width: 5px;
-    opacity: 1;
-}
-.tabs-formOrder .typeCarBlock input:checked + label::before {
-    width: 5px;
-    opacity: 1;
-    background-color: green
-}
-.tabs-formOrder .typeCarBlock label span {
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-.tabs-formOrder .tt-form-default input[type=text],
-.tabs-formOrder .tt-form-default input[type=email],
-.tabs-formOrder .tt-form-default input[type=number],
-.tabs-formOrder .tt-form-default input[type=search],
-.tabs-formOrder .tt-form-default textarea,
-.tabs-formOrder .woocommerce-Input {
-    background-color: var(--dark2);
-    color: var(--white)!important;
-}
-.tabs-formOrder .block.smallSpan .tt-form-default .tt-form-aside span {
-    font-size: 12px;
-}
-.tabs-formOrder .block .tt-form-default .form-group {
-    margin-bottom: 0;
-}
-.tabs-formOrder .block.formBlockMainOrder #contactform .info-block-main {
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--bg-gray);
-    margin-bottom: 15px;
-}
-/* .tabs-formOrder .block.formBlockMainOrder #contactform .manager {
-    color: var(--red);
-} */
-.tabs-formOrder .block.formBlockMainOrder #contactform .form-check-input {
-    position: inherit;
-    margin: 0;
-}
-.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data {
-    display: flex;
-}
-.tabs-formOrder .block.formBlockMainOrder #contactform .checkbox-data label {
-    margin-left: 10px;
-    color: var(--white);
-}
-.tabs-formOrder .block .tt-form-default input.error {
-    border-color: var(--red);
-    -webkit-box-shadow: 0px 0px 1px var(--red);
-    -moz-box-shadow: 0px 0px 1px var(--red);
-    box-shadow: 0px 0px 1px var(--red);
-}
-.d-none {
-    display: none;
 }

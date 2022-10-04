@@ -3,7 +3,8 @@
 
     $('.tabs-formOrder input.btnFormOrder').on('click', function(){
         var id = $(this).attr('data-next-order'),
-            content
+            content,
+            fixed_offset = $('#tt-stuck').height() + 45;
         if (id == 4) {
             // Получение данных
             var car = $('.tabs-formOrder .block input[name="car"]:checked').val(),
@@ -29,8 +30,11 @@
             if (nameForm.val()!='' && phoneForm.val()!='' && phoneForm.val().length==17 && checkPeople===true) alert('Отправлено')
         } else {
             content = $('.tabs-formOrder .block[data-next-order="' + id + '"]')
-            $('.tabs-formOrder .block.active').removeClass('active');
-            content.addClass('active');
+            // $('.tabs-formOrder .block.active').removeClass('active');
+            // content.addClass('active');
+            $('.tabs-formOrder .block').fadeOut(1);
+            content.fadeIn('slow')
+            $('html, body').animate({scrollTop: $('#formOrder').offset().top - fixed_offset}, 1000);
         }
         function addError(el) {
             el.addClass('error')
