@@ -34122,6 +34122,10 @@ html {
         width: 85%;
         height: 50%;
     }
+    .tt-form-review .tt-form-aside .wpcf7-submit {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
 @media screen and (max-width: 400px) {
     .mainSlider .slide .slide-content .tp-caption-02-01 {
