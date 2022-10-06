@@ -1,6 +1,12 @@
 (function($) {
     "use strict";
 
+    var mobMenu = $('#mobMenu');
+    $('#mobMenu .offcanvas-body ul > li a[data-bs-target="#modalPhone"]').on('click', function() {
+        mobMenu.offcanvas('hide')
+    });
+
+    // клик на кнопку Далее
     $('.tabs-formOrder input.btnFormOrder').on('click', function(){
         var id = $(this).attr('data-next-order'),
             content,
