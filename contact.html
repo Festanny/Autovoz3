@@ -134,7 +134,7 @@
                                 data-id="63eb9747" data-element_type="column">
                                 <div class="elementor-widget-wrap elementor-element-populated">
                                     <section
-                                        class="elementor-section elementor-inner-section elementor-element elementor-element-56df0f83 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-56df0f83 elementor-section-boxed elementor-section-height-default elementor-section-height-default directionsPage"
                                         data-id="56df0f83" data-element_type="section">
                                         <div class="elementor-container elementor-column-gap-default">
                                             <div class="elementor-column elementor-inner-column elementor-element elementor-element-7dbff29d contactInfo"
@@ -199,6 +199,156 @@
                                                                         <a href="#" class="fa-brands fa-whatsapp"></a>
                                                                     </li>
                                                                 </ul>
+                                                                <form class="formOrder">
+                                                                    <div id="js-searchfilter">
+                                                                        <div class="h3 tt-title">Рассчитать стоимость</div>
+                                                                        
+                                                                        <div class="tabs-formOrder" id="formOrder">
+                                                                            <div class="block active" data-next-order="1">
+                                                                                <div class="titleFormOrder">Выберите тип транспорта (1/4)</div>
+                                                                                <div class="formOrderDifferent">
+                                                                                    <div class="typeCarBlock">
+                                                                                        <div>
+                                                                                            <input type="radio" id="car1" name="car" value="Седан" required="">
+                                                                                            <label for="car1">
+                                                                                                <img src="images/typeauto/sedan.png" alt="">
+                                                                                                <span>Седан</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car2" name="car" value="Кроссовер" required="">
+                                                                                            <label for="car2">
+                                                                                                <img src="images/typeauto/crossover.png" alt="">
+                                                                                                <span>Кроссовер</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car3" name="car" value="Хэтчбэк" required="">
+                                                                                            <label for="car3">
+                                                                                                <img src="images/typeauto/hatchback.png" alt="">
+                                                                                                <span>Хэтчбэк</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car4" name="car" value="Универсал" required="">
+                                                                                            <label for="car4">
+                                                                                                <img src="images/typeauto/universal.png" alt="">
+                                                                                                <span>Универсал</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car5" name="car" value="Внедорожник" required="">
+                                                                                            <label for="car5">
+                                                                                                <img src="images/typeauto/suv.png" alt="">
+                                                                                                <span>Внедорожник</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car6" name="car" value="Грузовой" required="">
+                                                                                            <label for="car6">
+                                                                                                <img src="images/typeauto/load-truck.png" alt="">
+                                                                                                <span>Грузовой</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car7" name="car" value="Мотоцикл" required="">
+                                                                                            <label for="car7">
+                                                                                                <img src="images/typeauto/bike.png" alt="">
+                                                                                                <span>Мотоцикл</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <input type="radio" id="car8" name="car" value="Другое" required="">
+                                                                                            <label for="car8">
+                                                                                                <img src="images/typeauto/sportcar.png" alt="">
+                                                                                                <span>Другое</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <input type="button" data-next-order="2" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="block smallSpan" data-next-order="2">
+                                                                                <div class="titleFormOrder">Марка и модель автомобиля (2/4)</div>
+                                                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                                                    <div class="tt-form-aside">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-6">
+                                                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="brand" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Марка авто"></span></div>
+                                                                                                <span>Например, Nissan</span>
+                                                                                            </div>
+                                                                                            <div class="col-md-6">
+                                                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="model" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Модель авто"></span></div>
+                                                                                                <span>Например, Murano</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" data-next-order="1" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                                <input type="button" data-next-order="3" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                            </div>
+                                                                            <div class="block smallSpan" data-next-order="3">
+                                                                                <div class="titleFormOrder">Информация о перевозке (3/4)</div>
+                                                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                                                    <div class="tt-form-aside">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-6">
+                                                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="from" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Откуда"></span></div>
+                                                                                                <span>Например, Москва</span>
+                                                                                            </div>
+                                                                                            <div class="col-md-6">
+                                                                                                <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="to" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Куда"></span></div>
+                                                                                                <span>Например, Владивосток</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group mt-3"><span class="wpcf7-form-control-wrap your-name"><input type="text" id="datepicker" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Желаемая дата отправки"></span></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" data-next-order="2" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                                <input type="button" data-next-order="4" value="Далее" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                            </div>
+                                                                            <div class="block formBlockMainOrder" data-next-order="4">
+                                                                                <div class="titleFormOrder">Стоимость перевозки (4/4)</div>
+                                                                                <div id="contactform" class="tt-form-default tt-form-review" novalidate="novalidate">
+                                                                                    <div class="tt-form-aside">
+                                                                                        <p class="manager">Наши менеджеры рассчитывают стоимость перевозки автомобиля по Вашей заявке!</p>
+                                                                                        <div class="info-block">
+                                                                                            <div class="info-block-main mb-3">
+                                                                                                <span><b>Вы хотите перевезти:</b></span>
+                                                                                                <div class="info">
+                                                                                                    <span>Информация</span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <span class="price-text"><b>Узнайте стоимость прямо сейчас!</b></span>
+                                                                                        </div>
+                                                                                        <div class="form-group-auto">                                                              
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-6">
+                                                                                                    <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Имя"></span></div>                                                                        
+                                                                                                </div>
+                                                                                                <div class="col-md-6">
+                                                                                                    <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" id="phone" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Номер телефона"></span></div>                                                                        
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group mt-3">
+                                                                                            <div class="checkbox-data">
+                                                                                                <input type="checkbox" class="form-check-input" id="agree-on-pdata-processing-check" required="" checked="">
+                                                                                                <label class="form-check-label" for="agree-on-pdata-processing-check">Согласен на обработку персональных данных</label>
+                                                                                            </div>
+                                                                                            <div class="btn_form_order mb-3 mt-3">
+                                                                                                <input type="button" data-next-order="3" value="Назад" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                                                <input type="button" data-next-order="5" value="Узнать стоимость" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-wide btnFormOrder">
+                                                                                            </div>
+                                                                                            <p class="desc">* В течение 5 минут с Вами свяжется наш специалист и проинформирует вас о стоимости перевозки, а также ответит на все интересующие Вас вопросы.</p>
+                                                                                        </div>                                                    
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                    </div>
+                                                                </form>
                                                                 <div class="map-dr mt-3">
                                                                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A65cf9c18fd0c5e56df2af2067b220d7a317aea75cd465aa3b569e244dc19071f&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
                                                                 </div>

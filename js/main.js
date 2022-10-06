@@ -1361,7 +1361,7 @@
                 slidesToShow: itemQuantity || 2,
                 slidesToScroll: 1,
                 infinite: true,
-                arrows: false,
+                arrows: true,
                 dots: true,
                 autoplay: false,
                 autoplaySpeed: 5000,
@@ -1370,12 +1370,19 @@
                 responsive: [{
                         breakpoint: 1370,
                         settings: {
-                            arrows: false,
+                            // arrows: false,
                             dots: true,
                         }
                     },
                     {
                         breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 1,
+                            // arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 791,
                         settings: {
                             slidesToShow: 1,
                             arrows: false,
@@ -1437,7 +1444,7 @@
                         settings: {
                             slidesToShow: 4,
                             slidesToScroll: 4,
-                            arrows: false,
+                            // arrows: false,
                             dots: true,
                         }
                     },
@@ -1446,14 +1453,14 @@
                         settings: {
                             slidesToShow: 4,
                             slidesToScroll: 4,
-                            arrows: false,
+                            // arrows: false,
                         }
                     }, {
                         breakpoint: 1025,
                         settings: {
                             slidesToShow: 3,
                             slidesToScroll: 3,
-                            arrows: false,
+                            // arrows: false,
                         }
                     },
                     {
@@ -1532,7 +1539,7 @@
     var jsCarouselNews = $ttPageContent.find('.js-carousel-news');
     if (jsCarouselNews.length) {
         jsCarouselNews.slick({
-            dots: false,
+            dots: true,
             arrows: true,
             infinite: true,
             speed: 500,
@@ -1541,11 +1548,21 @@
             adaptiveHeight: true,
             autoplay: true,
             autoplaySpeed: 5000,
+            infinite: false,
             responsive: [
                 {
                     breakpoint: 1230,
                     settings: {
                         slidesToShow: 2,
+                        slidesToScroll: 1,
+                        // arrows: false,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 791,
+                    settings: {
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         arrows: false,
                         dots: true,

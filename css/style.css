@@ -4,6 +4,7 @@
     --dark2:rgb(42, 42, 42);
     --red: #dd3d53;
     --bg-gray: #f7f7f7;
+    --bg-gray-light: #fcfcfc;
     --bgDark: #333333;
     --color: #707070;
 }
@@ -354,13 +355,13 @@ template {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1115px) {
     .container {
         max-width: 990px;
     }
 }
 
-@media (min-width: 1230px) {
+@media (min-width: 1325px) {
     .container {
         max-width: 1200px;
     }
@@ -11167,7 +11168,7 @@ tooltip
     -webkit-flex: 2 1 auto;
     -ms-flex: 2 1 auto;
     flex: 2 1 auto;
-    margin-right: 28px;
+    /* margin-right: 28px; */
 }
 
 @media (min-width: 1025px) {
@@ -11338,7 +11339,7 @@ tooltip
     flex-wrap: wrap;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    justify-content: center;
+    justify-content: end;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
@@ -20143,7 +20144,7 @@ p.form-submit {
 }
 
 .box-info {
-    background-color: #f6f6f6;
+    background-color: var(--bg-gray-light);
     padding: 42px 40px 55px;
 }
 
@@ -33658,7 +33659,7 @@ html {
 
 .formOrder {
     padding: 50px 0;
-    background: #333333;
+    /* background: #333333; */
     color: var(--white);
 }
 
@@ -34057,6 +34058,20 @@ html {
 	display: block;
 	filter: invert(1);
 }
+@media screen and (max-width: 1355px) {
+    #tt-header.tt-header-01 .header-holder .col-logo img {
+        width: 180px;
+    }
+}
+@media screen and (max-width: 1324px) {
+    #tt-header.tt-header-01 .header-holder .col-logo {
+        width: 100%;
+        text-align: center;
+    }
+    #tt-header.tt-header-01 #tt-desctop-menu nav>ul {
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 1130px) {
     .mainSlider .slide .slide-content .tp-caption-02-01 {
         font-size: 80px;
@@ -34079,6 +34094,9 @@ html {
     #magnify {
         width: 90%;
         height: 60%;
+    }
+    #tt-header.tt-header-01 .header-holder .col-logo {
+        width: auto;
     }
 }
 @media screen and (max-width: 797px) {
